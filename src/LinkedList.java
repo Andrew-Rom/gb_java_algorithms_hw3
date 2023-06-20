@@ -156,15 +156,18 @@ public class LinkedList {
     }
 
     public void reverseList() {
-        Node currentNode = head;
-        Node previousNode = null;
-        while (currentNode != null) {
-            if (currentNode.next == null)
-                head = currentNode;
-            Node nextNode = currentNode.next;
-            currentNode.next = previousNode;
-            previousNode = currentNode;
-            currentNode = nextNode;
+//        Node currentNode = head;
+//        Node previousNode = null;
+//        while (currentNode != null) {
+//            if (currentNode.next == null)
+//                head = currentNode;
+//            Node nextNode = currentNode.next;
+//            currentNode.next = previousNode;
+//            previousNode = currentNode;
+//            currentNode = nextNode;
+//        }
+        for (int i = 0; i < size / 2; i++) {
+            swap(i, size - i -1);
         }
     }
 
