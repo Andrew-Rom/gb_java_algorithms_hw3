@@ -155,7 +155,7 @@ public class LinkedList {
         }
     }
 
-    public void reverseList() {
+    private void reverseList() {
 //        Node currentNode = head;
 //        Node previousNode = null;
 //        while (currentNode != null) {
